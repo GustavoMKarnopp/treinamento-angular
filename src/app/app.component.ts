@@ -1,9 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <router-outlet></router-outlet>
+    <app-title title="Olá GUS"></app-title>
+  `
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  constructor() {}
+
+  //VOID CARACTERIZA QUE NÃO TERA NENHUM RETORNO
+  ngOnInit(): void{
+    console.log(1)
+  }
 }
