@@ -11,3 +11,11 @@
 <img [src]="imageSrc" [title]="imgTitle" [alt]="imgAlt">
 
 <hr>
+
+<button (click)="alertaInfo($event)">Evento</button>
+
+<div (mousemove)="mouseMooveTeste($event)" style="background: red; width: 300px; height: 300px; display: flex; align-items: center; justify-content: center;">
+    {{position.x}}
+    <br>
+    {{position.y}}
+</div>
