@@ -1,0 +1,16 @@
+<p *ngIf="condition; else elseBlock">True</p>
+<ng-template #elseBlock>
+    <p>
+        False
+    </p>
+</ng-template>
+
+<hr>
+
+<p *ngIf="publicCondition">
+    Condicao verdadeira 
+</p>
+<p *ngIf="!publicCondition">
+    Condicao falsa 
+</p>
+<button (click)="onClick()"> Mudar Condicao</button>
